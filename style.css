@@ -1,0 +1,153 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  color: #ff6363;
+  font-weight: bold;
+}
+
+p {
+  font-size: 20px;
+  color: #484848;
+}
+
+.section {
+  text-align: center;
+}
+
+.nav-header {
+  background: transparent;
+  width: 100%;
+  position: fixed;
+  z-index: 500;
+}
+
+.header-links ul {
+  float: right;
+  margin: 20px;
+}
+
+.header-links li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.header-links a {
+  color: #757575;
+}
+
+.header-links a:hover {
+  color: #ff6363 !important;
+}
+
+.aboutme {
+  background: url("https://s3-us-west-2.amazonaws.com/files.bradengelhardt.com/brad-bg-main.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.opaque-bg {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10% auto;
+  max-width: 400px;
+}
+
+.skillbar {
+  background: #efefef;
+  margin-bottom: 20px;
+  height: 30px;
+  border-radius: 3px;
+  position: relative;
+}
+
+.skillbar-title {
+  float: left;
+  height: 30px;
+  width: 140px;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+.skillbar-bar {
+  height: 30px;
+  width: 0%;
+}
+
+/* Colores personalizados por skill */
+.skillbar-bar.htmlcss {
+  background-color: #DD1E2F;
+}
+.skillbar-bar.php {
+  background-color: #EBB035;
+}
+.skillbar-bar.sql {
+  background-color: #218559;
+}
+.skillbar-bar.js {
+  background-color: #06A2CB;
+}
+
+.skill-bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  line-height: 30px;
+  font-size: 13px;
+}
+
+.contact-form {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+input.form-control, textarea.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  font-size: 16px;
+}
+
+button.btn-lg {
+  padding: 10px 30px;
+  background: white;
+  color: #ff6363;
+  font-weight: bold;
+  border: 2px solid #ff6363;
+  cursor: pointer;
+}
+
+button.btn-lg:hover {
+  background: #ff6363;
+  color: white;
+}
+
+.footer {
+  background: #484848;
+  color: white;
+  padding: 20px;
+}
+
+.footer a {
+  color: white;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  color: #ff6363;
+}

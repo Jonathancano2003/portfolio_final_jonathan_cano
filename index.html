@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Jonathan Cano | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Navegación -->
+  <div class="nav-header">
+    <div class="header-links">
+      <ul>
+        <li><a href="#contact">CONTACTO</a></li>
+        <li><a href="#portfolio">PROYECTOS</a></li>
+        <li><a href="#about">SOBRE MÍ</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Contenido principal -->
+  <div id="fullpage">
+
+    <!-- Inicio -->
+    <div class="section aboutme" data-anchor="home">
+      <div class="opaque-bg animated fadeInDown">
+        <h1 style="color:white">JONATHAN<span style="color:#FF6363">/</span>CANO</h1>
+        <p><span id="holder"></span><span class="blinking-cursor">|</span></p>
+      </div>
+      <i id="moveDown" class="fa fa-chevron-down fa-3x bounce"></i>
+    </div>
+
+    <!-- Sobre mí -->
+    <div class="section" data-anchor="about">
+      <div class="content">
+        <h1 class="wow fadeInDown">SOBRE MÍ</h1>
+        <p>Soy Jonathan Cano, técnico informático y desarrollador web junior en Badalona, Barcelona. Con experiencia en soporte IT, desarrollo en PHP (Symfony, Laravel), y trabajo en equipo.</p>
+
+        <div class="wow fadeInUp container-skillbar">
+          <div class="skillbar clearfix" data-percent="90%">
+            <div class="skillbar-title" style="background: #DD1E2F;"><span>HTML / CSS</span></div>
+            <div class="skillbar-bar htmlcss"></div>
+            <div class="skill-bar-percent">90%</div>
+          </div>
+          <div class="skillbar clearfix" data-percent="80%">
+            <div class="skillbar-title" style="background: #EBB035;"><span>PHP / Laravel / Symfony</span></div>
+            <div class="skillbar-bar php"></div>
+            <div class="skill-bar-percent">80%</div>
+          </div>
+          <div class="skillbar clearfix" data-percent="70%">
+            <div class="skillbar-title" style="background: #218559;"><span>SQL / NoSQL</span></div>
+            <div class="skillbar-bar sql"></div>
+            <div class="skill-bar-percent">70%</div>
+          </div>
+          <div class="skillbar clearfix" data-percent="60%">
+            <div class="skillbar-title" style="background: #06A2CB;"><span>JavaScript / Angular</span></div>
+            <div class="skillbar-bar js"></div>
+            <div class="skill-bar-percent">60%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Proyectos -->
+    <div class="section" data-anchor="portfolio">
+      <div class="content-slide">
+        <div class="slide">
+          <h1>PIPABOT</h1>
+          <p>Chatbot de música desarrollado con Node.js.</p>
+        </div>
+        <div class="slide">
+          <h1>NOVAATUO</h1>
+          <p>Aplicación de gestión de servicios en Laravel + PHP.</p>
+        </div>
+        <div class="slide">
+          <h1>CRUD Películas</h1>
+          <p>Proyecto en Laravel con base de datos MySQL.</p>
+        </div>
+        <div class="slide">
+          <h1>Experiencia IT</h1>
+          <p>Trabajo como desarrollador en Black INIT y técnico en Alo Systems y Revolution Computer.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contacto -->
+    <div class="section" data-anchor="contact">
+      <div class="content">
+        <h1>CONTACTO</h1>
+        <p>Puedes escribirme para cualquier propuesta o colaboración:</p>
+        <div class="contact-form">
+          <form id="ajax-contact" method="post" action="contact.php">
+            <input type="text" class="form-control" name="name" placeholder="Tu nombre" required>
+            <input type="email" class="form-control" name="email" placeholder="Tu email" required>
+            <textarea class="form-control" name="message" placeholder="Tu mensaje" required></textarea>
+            <button type="submit" class="btn btn-lg">Enviar mensaje</button>
+          </form>
+          <br>
+          <a href="assets/CV_Jonathan_Cano.pdf" class="btn btn-lg" download>Descargar CV</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="section fp-auto-height">
+      <div class="footer">
+        <p>Conecta conmigo</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/jonathancanobenavides" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+          <a href="https://github.com/Jonathancano2003" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
