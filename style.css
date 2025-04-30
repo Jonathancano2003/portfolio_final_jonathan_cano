@@ -151,3 +151,53 @@ button.btn-lg:hover {
 .footer a:hover {
   color: #ff6363;
 }
+/* Slide backgrounds */
+.slide-1 {
+  background: url('assets/pipabot.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+
+.slide-2 {
+  background: url('assets/novaatuo.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+
+.slide-3 {
+  background: url('assets/crud.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+
+.slide-4 {
+  background: url('assets/it.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+
+/* Ajustes del contenido dentro del slide */
+.content-slide .slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-shadow: 1px 1px 2px black;
+}
+
+/* Flechas */
+.fp-controlArrow {
+  border-style: solid;
+  display: block;
+}
+
+.fp-controlArrow.fp-prev {
+  border-color: transparent #ff6363 transparent transparent !important;
+  left: 30px !important;
+}
+
+.fp-controlArrow.fp-next {
+  border-color: transparent transparent transparent #ff6363 !important;
+  right: 30px !important;
+}
